@@ -95,6 +95,7 @@ extension ProsViewController: UITableViewDelegate {
 
 extension ProsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
+        //filter displayed pros based on search bar text
         if let searchText = searchController.searchBar.text {
             if searchText == "" {
                 loadSortedData()
